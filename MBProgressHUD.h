@@ -241,6 +241,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) CGFloat margin UI_APPEARANCE_SELECTOR;
 
 /**
+* The amount of space between the HUD contentView and the HUD elements (labels, indicators or custom views).
+* This also represents the minimum bezel distance to the edge of the HUD view.
+* use to replace margin
+* Defaults to UIEdgeInsetMake(20,20,20,20)
+*/
+@property (assign, nonatomic) UIEdgeInsets contentInsets UI_APPEARANCE_SELECTOR;
+
+/**
  * The minimum size of the HUD bezel. Defaults to CGSizeZero (no minimum size).
  */
 @property (assign, nonatomic) CGSize minSize UI_APPEARANCE_SELECTOR;
